@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stop the Time</title>
-<meta name="description" content="Un jeu de precision : arreter le chronometre pile sur la cible.">
+<title>Applications mobiles</title>
+<meta name="description" content="Developpement d'applications mobiles independantes : jeux et outils metier.">
 <style>
   :root{
     --nuit:#1B2A4A;
@@ -23,40 +23,38 @@
     font-size:17px;
     line-height:1.6;
   }
-  .wrap{max-width:40rem;margin:0 auto;padding:0 1.5rem}
+  .wrap{max-width:42rem;margin:0 auto;padding:0 1.5rem}
 
-  header{padding:5rem 0 3.5rem}
-  .chrono{
-    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
-    font-size:clamp(3.5rem,14vw,7rem);
+  header{padding:5rem 0 3rem}
+  .accroche{
+    font-size:clamp(1.8rem,6vw,2.6rem);
     font-weight:600;
-    letter-spacing:-0.03em;
-    color:var(--jaune);
-    line-height:1;
-    font-variant-numeric:tabular-nums;
+    line-height:1.25;
+    letter-spacing:-0.015em;
     margin:0;
+    max-width:24ch;
   }
-  .chrono .cs{color:var(--corail)}
-  h1{
-    font-size:1.05rem;
-    font-weight:600;
-    margin:0 0 2.5rem;
-  }
-  .sous{margin:1.25rem 0 0;font-size:1.15rem;max-width:32rem}
+  .accroche .pointe{color:var(--jaune)}
+  .sous{margin:1.5rem 0 0;font-size:1.1rem;max-width:34rem}
 
   section{
     border-top:1px solid rgba(242,232,201,0.18);
     padding:2.5rem 0;
   }
+  h2{font-size:1.25rem;font-weight:600;margin:0 0 0.2rem}
   p{margin:0 0 1rem;max-width:34rem}
+  .projet p{margin-top:0.6rem}
   .etat{
     display:inline-block;
-    font-size:0.85rem;
-    color:var(--vert);
-    border:1px solid var(--vert);
+    font-size:0.82rem;
     border-radius:2rem;
     padding:0.1rem 0.7rem;
+    vertical-align:middle;
+    margin-left:0.4rem;
   }
+  .dev{color:var(--vert);border:1px solid var(--vert)}
+  .prive{color:var(--corail);border:1px solid var(--corail)}
+  .socle{font-size:0.95rem;color:rgba(242,232,201,0.8)}
   a{color:var(--jaune)}
   a:focus-visible{outline:2px solid var(--jaune);outline-offset:3px}
   footer{
@@ -70,13 +68,13 @@
 
 <div class="wrap">
   <header>
-    <h1>Stop the Time</h1>
-    <p class="chrono">10<span class="cs">.00</span></p>
-    <p class="sous">Lancez le chronometre, arretez-le pile sur la cible. Cinq cibles, un mode aveugle ou les chiffres disparaissent en cours de route, et vos records gardes sur l'appareil.</p>
+    <p class="accroche">Des applications qui font <span class="pointe">une seule chose</span>, et la font bien.</p>
+    <p class="sous">Developpement mobile independant, dans le Tarn. Des jeux courts et des outils metier, concus pour tenir dans une main et fonctionner hors ligne quand c'est possible.</p>
   </header>
 
   <section>
-    <p><span class="etat">en developpement</span></p>
+    <h2>Comment c'est fait</h2>
+    <p class="socle">Flutter et Dart, pour un seul code partage entre Android et iOS. Cartographie OpenStreetMap, calculs d'itineraire TomTom. Pas de compte a creer, pas de donnees collectees sans raison.</p>
   </section>
 
   <footer>
